@@ -1,0 +1,14 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome 127.0.0.1 (1)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9284,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:55676/p/JD/WebContent/index.html?_cmAuth\u003dlhturmgpyh"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>京东</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</head>
+<body onscroll="scroll()" onload="AllOnLoad(new Array(['Main_Middle_Spike_Right',2222,2],['Main_Middle_Top_MLAd',3000,3],['Main_Middle_Top_MRUpAd',2500,2],['Main_Middle_Top_MRMidAd',2000,2],['Main_Middle_Top_MRDownAd',3200,2]))">
+	<div id="Main">
+		<div id="Main_Top">
+			<div id="Main_Top_TopBG">
+			<div id="Main_Top_Top">
+				<div id="Main_Top_Top_Location">
+				</div>
+				<ul id="Main_Top_Top_navigate" >
+					<li><a href="#" style="color:red">你好,请登录</a></li>
+					<li class="navigate_separate"></li>
+					<li><a href="#">免费注册</a></li>
+					<li class="navigate_separate"></li>
+					<li><a href="#" >我的订单</a></li>
+					<li class="navigate_separate"></li>
+					<li onmouseover="TopNavigateOver(this)" onmouseout="TopNavigateOut(this)"><a href="#">我的京东</a><div id="Main_Top_Top_navigate_downTriangle"></div><div id="Main_Top_Top_navigate_detail_myJD" ></div></li>
+					<li class="navigate_separate"></li>
+					<li><a href="#">京东会员</a></li>
+					<li class="navigate_separate"></li>
+					<li onmouseover="TopNavigateOver(this)" onmouseout="TopNavigateOut(this)"><a href="#"  style="color:red">企业采购</a><div id="Main_Top_Top_navigate_downTriangle"></div><div id="Main_Top_Top_navigate_detail_enterprise" ></div></li>
+					<li class="navigate_separate"></li>
+					<li onmouseover="TopNavigateOver(this)" onmouseout="TopNavigateOut(this)"><a href="#">客服服务</a><div id="Main_Top_Top_navigate_downTriangle"></div><div id="Main_Top_Top_navigate_detail_support" ></div></li>
+					<li class="navigate_separate"></li>
+					<li onmouseover="TopNavigateOver(this)" onmouseout="TopNavigateOut(this)"><a href="#">网站导航</a><div id="Main_Top_Top_navigate_downTriangle"></div><div id="Main_Top_Top_navigate_detail_navigate" ></div></li>
+					<li class="navigate_separate"></li>
+					<li><a href="#">手机京东</a></li>
+				</ul>
+			</div>
+			</div>
+			<div id="Main_Top_BottomBG">
+			<div id="Main_Top_Bottom">
+				<div id="Main_Top_Bottom_Left">
+				</div>
+				<div id="Main_Top_Bottom_Middle">
+					<div id="Main_Top_Bottom_Middle_Search">
+						<input id="Main_Top_Bottom_Middle_Search_input" type="text" value="输入动态加载的页数默认5页 点击搜索键后设置" onfocus="value=''"  oninput = "value=value.replace(/[^\d]/g,'')" />
+						<a href="#"><div id="Main_Top_Bottom_Middle_Search_Button" onclick="SetDynamicLoadCounts()"></div></a>
+					</div>
+					<ul id="Main_Top_Bottom_Middle_navigate">
+						<li><a href="#" style="color:red">家装年货节</a></li>
+						<li><a href="#">手机狂欢</a></li>
+						<li><a href="#">5折神卷</a></li>
+						<li><a href="#">每100-50</a></li>
+						<li><a href="#">领卷5折</a></li>
+						<li><a href="#">每400-50</a></li>
+						<li><a href="#">年货节</a></li>
+						<li><a href="#">品质家具</a></li>
+						<li><a href="#">家装建材</a></li>
+						
+					</ul>
+					
+				</div>
+				<a href="#"><div id="Main_Top_Bottom_Middle_ShopCar"></div></a>
+				<ul id="Main_Top_Bottom_Middle_navigate2">
+					<li><a href="#" style="color: red;font-weight: bold">秒杀</a></li>
+					<li><a href="#" style="color: red;font-weight: bold">优惠卷</a></li>
+					<li><a href="#">PLUS会员</a></li>
+					<li><a href="#">品牌闪购</a></li>
+					<li><a href="#">拍卖</a></li>
+					<li><a href="#">京东家电</a></li>
+					<li><a href="#">京东超市</a></li>
+					<li><a href="#">京东生鲜</a></li>
+					<li><a href="#">京东国际</a></li>
+					<li><a href="#">京东金融</a></li>
+				</ul>
+				<div id="Main_Top_Bottom_Right">
+				</div>
+			</div>
+			</div>		
+		</div>
+		<div id="Main_MiddleBGColor">
+		<div id="Main_MiddleBGImg">	
+		<div id="Main_Middle">
+			<div id="Main_Middle_Anchor">
+				<ul id="Main_Middle_Anchor_Ul">
+					<li id="Main_Middle_Anchor_Ul_Spike" onclick="AnchorTo(this)">京东秒杀</li>
+					<li id="Main_Middle_Anchor_Ul_Year" onclick="AnchorTo(this)"></li>
+					<li id="Main_Middle_Anchor_Ul_Recommend" onclick="AnchorTo(this)">为您推荐</li>
+					<li id="Main_Middle_Anchor_Ul_Top" style="border-style: none" onclick="AnchorTo(this)">^<br/>顶部</li>
+				</ul>
+			</div>	
+			<div id="Main_Middle_Top">
+				<div id="Main_Middle_Top_Left">
+					<ul id="Main_Middle_Top_Left_navigateAll">
+						<li id="Main_Middle_Top_Left_navigateAll_li1" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">家用电器</a> <div id="Main_Middle_Top_Left_navigateAll_detail1"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li2" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a> <div id="Main_Middle_Top_Left_navigateAll_detail2"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li3" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">电脑</a>/<a href="#">办公</a> <div id="Main_Middle_Top_Left_navigateAll_detail3"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li4" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">家居</a>/<a href="#">家具</a>/<a href="#">家装</a>/<a href="#">厨具</a> <div id="Main_Middle_Top_Left_navigateAll_detail4"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li5" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a> <div id="Main_Middle_Top_Left_navigateAll_detail5"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li6" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">美妆</a>/<a href="#">个护清洁</a>/<a href="#">宠物</a> <div id="Main_Middle_Top_Left_navigateAll_detail6"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li7" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">女鞋</a>/<a href="#">装包</a>/<a href="#">钟表</a>/<a href="#">珠宝</a> <div id="Main_Middle_Top_Left_navigateAll_detail7"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li8" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">男鞋</a>/<a href="#">运动</a>/<a href="#">户外</a> <div id="Main_Middle_Top_Left_navigateAll_detail8"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li9" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">房产</a>/<a href="#">汽车</a>/<a href="#">汽车用品</a> <div id="Main_Middle_Top_Left_navigateAll_detail9"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li10" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">母婴</a>/<a href="#">玩具乐器</a> <div id="Main_Middle_Top_Left_navigateAll_detail10"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li11" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">食品</a>/<a href="#">酒类</a>/<a href="#">生鲜</a>/<a href="#">特产</a> <div id="Main_Middle_Top_Left_navigateAll_detail11"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li12" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">艺术</a>/<a href="#">礼品鲜花</a>/<a href="#">农资绿植</a> <div id="Main_Middle_Top_Left_navigateAll_detail12"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li13" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">医药保健</a>/<a href="#">计生情趣</a> <div id="Main_Middle_Top_Left_navigateAll_detail13"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li14" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">图书</a>/<a href="#">文娱</a>/<a href="#">教育</a>/<a href="#">电子书</a> <div id="Main_Middle_Top_Left_navigateAll_detail14"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li15" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">机票</a>/<a href="#">酒店</a>/<a href="#">旅游</a>/<a href="#">生活</a> <div id="Main_Middle_Top_Left_navigateAll_detail15"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li16" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">理财</a>/<a href="#">众筹</a>/<a href="#">白条</a>/<a href="#">保险</a> <div id="Main_Middle_Top_Left_navigateAll_detail16"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li17" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">安装</a>/<a href="#">维修</a>/<a href="#">清洗</a>/<a href="#">二手</a> <div id="Main_Middle_Top_Left_navigateAll_detail17"></div></li>
+						<li id="Main_Middle_Top_Left_navigateAll_li18" onmouseover="MMTLNavigateOver(this)" onmouseout="MMTLNavigateOut(this)"><a href="#">工业品</a> <div id="Main_Middle_Top_Left_navigateAll_detail18"></div></li>
+					</ul>
+				</div>
+				<a href="#"><img id="Main_Middle_Top_MLAd" src="../WebContent/images/Main_Middle_TopMAdd1.bmp"/></a>
+				<a href="#"><img id="Main_Middle_Top_MRUpAd" src="../WebContent/images/Main_Top_MRUpAd1.bmp"/></a>
+				<a href="#"><img id="Main_Middle_Top_MRMidAd" src="../WebContent/images/Main_Top_MRMidAd1.bmp"/></a>
+				<a href="#"><img id="Main_Middle_Top_MRDownAd" src="../WebContent/images/Main_Top_MRDownAd1.bmp"/></a>
+				<a href="#"><img id="Main_Middle_Top_Right" src="../WebContent/images/Main_Top_Right.bmp"/></a>
+			</div>
+			<a href="#"><div id="Main_Middle_Spike">
+				<div id="Main_Middle_Spike_Left">
+					<div id="Main_Middle_Spike_Left_JDSpike">京东秒杀</div>
+					<div id="Main_Middle_Spike_Left_JDSpikeTime">倒计时</div>
+					<div id="Main_Middle_Spike_Left_Time"></div>					
+				</div>
+				<div id="Main_Middle_Spike_Middle"></div>
+				<img id="Main_Middle_Spike_Right"  src="../WebContent/images/Main_Middle_Spike_Right1.bmp"/>
+			</div></a>
+			<div id="Main_Middle_YearFestival">
+				<div id="Main_Middle_YearFestival_Center">
+					
+				</div>
+			</div>
+			<div id="Main_Middle_recommend">
+				<div id="Main_Middle_recommend_Title"></div>
+				<table id="Main_Middle_recommend_table">
+				<tr>
+					<td>
+						<div id="com1"></div>
+					</td>
+					<td>
+						<div id="com2"></div>
+					</td>
+					<td>
+						<div id="com3"></div>
+					</td>
+					<td>
+						<div id="com4"></div>
+					</td>
+					<td>
+						<div id="com5"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="com1"></div>
+					</td>
+					<td>
+						<div id="com2"></div>
+					</td>
+					<td>
+						<div id="com3"></div>
+					</td>
+					<td>
+						<div id="com4"></div>
+					</td>
+					<td>
+						<div id="com5"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="com1"></div>
+					</td>
+					<td>
+						<div id="com2"></div>
+					</td>
+					<td>
+						<div id="com3"></div>
+					</td>
+					<td>
+						<div id="com4"></div>
+					</td>
+					<td>
+						<div id="com5"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="com1"></div>
+					</td>
+					<td>
+						<div id="com2"></div>
+					</td>
+					<td>
+						<div id="com3"></div>
+					</td>
+					<td>
+						<div id="com4"></div>
+					</td>
+					<td>
+						<div id="com5"></div>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div id="Main_Bottom">
+			<div id="Main_Bottom_Center">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
